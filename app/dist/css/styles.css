@@ -1,2 +1,2 @@
-#countdown-end{display:none}.cover{width:100vw;height:100vh;background:url(../images/caseyryan.jpg);background-size:100% 100vh}.welcome{text-align:center}
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script|Quicksand);#countdown-end{display:none}.darken{background-image:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url(../images/caseyryan.jpg);background-position:80% top}.cover{border-radius:5%;height:80vh}.welcome{text-align:center;font-family:Dancing Script,cursive}.welcome>div{background:rgba(0,0,0,.2)}.welcome h1,.welcome p{color:#fff}.welcome span{border-top:1px solid #fff;display:inline-block}p{font-family:Quicksand,sans-serif}.navbar-brand{font-family:Dancing Script,cursive;letter-spacing:2px}
 /*# sourceMappingURL=styles.css.map */

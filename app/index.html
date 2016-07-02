@@ -1,38 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Casey and Ryan Wedding">
-  <meta name="author" content="Ryan Castner">
-  <title>Casey and Ryan Wedding</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Casey and Ryan Wedding">
+	<meta name="author" content="Ryan Castner">
+	<title>Casey and Ryan Wedding</title>
 
-  <link rel="shortcut icon" href="favicons/favicon.ico">
-  <link rel="stylesheet" href="dist/css/reset.css">
-  <link rel="stylesheet" href="dist/css/styles.css">
-  <link rel="stylesheet" href="dist/css/animations.css">
+	<script src="https://use.fortawesome.com/2d495673.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<link rel="shortcut icon" href="favicons/favicon.ico">
+	<link rel="stylesheet" href="dist/css/reset.css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="dist/css/styles.css">
+	<link rel="stylesheet" href="dist/css/animations.css">
 
 </head>
 <body>
-	<div class="slider">
-		<div class="cover"></div>
+
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">C&amp;R Wedding</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+				<ul class="nav navbar-nav pull-right">
+					<li class="active"><a href="#">Home <i class="fa fa-heart"></i></a></li>
+					<li><a href="#about">Our Story</a></li>
+					<li><a href="#event">Event</a></li>
+					<li><a href="#rsvp">RSVP</a></li>
+					<li><a href="#map">Map</a></li>
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="welcome text-center slideUp col-xs-12 col-md-8 col-md-offset-2 darken cover">
+		<div class="col-xs-10 col-md-6 col-md-offset-3">
+			<h1>Casey &amp; Ryan</h1>
+			<p>
+				<span class="col-md-3"></span>
+				<i class="fa fa-heart"></i>
+				<span class="col-md-3 col-md-offset-8"></span>
+			</p>
+			<p>are getting married September 17th, 2016</p>
+		</div>
 	</div>
-	<div class="welcome text-center slideUp">
-		<h1>Casey &amp; Ryan</h1>
-		<p>
-			<span></span>
-			<i class="fa fa-heart"></i>
-			<span></span>
-		</p>
-		<h2>are getting married September 17th, 2016</h2>
+	<div class="countdown">
+		<span id="days">0</span>
+		<span id="hours">0</span>
+		<span id="minutes">0</span>
+		<span id="seconds">0</span>
+		<div id="countdown-end">Wedding Day!!!</div>
 	</div>
-  <div class="countdown">
-    <span id="days">0</span>
-    <span id="hours">0</span>
-    <span id="minutes">0</span>
-    <span id="seconds">0</span>
-    <div id="countdown-end">Wedding Day!!!</div>
-  </div>
-  <script src="dist/js/bundle.js"></script>
+	<script src="dist/js/bundle.js"></script>
 </body>
 </html>

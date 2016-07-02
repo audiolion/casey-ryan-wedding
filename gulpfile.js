@@ -59,7 +59,7 @@ gulp.task('serve', ['clean:dist', 'sass','browserify','images'], function() {
     }
   });
 
-  gulp.watch('app/scss/*.scss', ['clean:css','sass']);
+  gulp.watch('app/scss/*.scss', ['sass']);
   gulp.watch('app/js/index.js', ['browserify']);
   gulp.watch('app/images/*', ['images']);
 });

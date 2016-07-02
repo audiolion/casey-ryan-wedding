@@ -1,6 +1,6 @@
 {
   "name": "casey-ryan-wedding",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Wedding website for my upcoming marriage to Casey",
   "main": "index.js",
   "scripts": {
