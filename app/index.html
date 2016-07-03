@@ -13,13 +13,52 @@
 	<link rel="stylesheet" href="dist/css/reset.css">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="dist/css/navbar.css">
 	<link rel="stylesheet" href="dist/css/styles.css">
-	<link rel="stylesheet" href="dist/css/animations.css">
+	<link rel="stylesheet" href="dist/css/countdown.css">
+	<link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
 
 </head>
 <body>
+	<div class="viewport">
+		<div class="backgrounds overlay">
+			<div class="background animated fadeIn">
 
-	<nav class="navbar navbar-default">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-md-8 col-md-offset-2">
+				<div class="welcome text-center col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3 animated fadeInUp">
+					<h1>Casey &amp; Ryan</h1>
+					<p>
+						<span>
+						<span class="col-md-5 col-xs-4 line"></span>
+						<i class="fa fa-heart"></i>
+						<span class="col-md-5 col-xs-4 line pull-right"></span>
+						</span>
+					</p>
+					<p>Are getting Married</p>
+					<h2>September 17th, 2016</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row countdown">
+			<div class="row">
+				<a href="#about"><div class="col-md-2 col-md-offset-5 scroll animated fadeIn"><div class="animated infinite pulse">Scroll Down
+				<br>
+				<i class="fa fa-chevron-down animated infinite pulse"></i>
+				</div></div></a>
+			</div>
+			<div class="row col-md-offset-2 col-md-8">
+				<div class="days countdown-section animated flipInX"><span id="days" class="countdown-amount">0</span><p>Days</p></div>
+				<div class="hours countdown-section animated flipInX"><span id="hours" class="countdown-amount">0</span><p>Hours</p></div>
+				<div class="minutes countdown-section animated flipInX"><span id="minutes" class="countdown-amount">0</span><p>Minutes</p></div>
+				<div class="seconds countdown-section animated flipInX"><span id="seconds" class="countdown-amount">0</span><p>Seconds</p></div>
+			</div>
+			<div id="countdown-end">Wedding Day!!!</div>
+		</div>
+	</div>
+		<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
@@ -38,29 +77,22 @@
 					<li><a href="#event">Event</a></li>
 					<li><a href="#rsvp">RSVP</a></li>
 					<li><a href="#map">Map</a></li>
-
 				</ul>
 			</div>
 		</div>
 	</nav>
-	<div class="welcome text-center slideUp col-xs-12 col-md-8 col-md-offset-2 darken cover">
-		<div class="col-xs-10 col-md-6 col-md-offset-3">
-			<h1>Casey &amp; Ryan</h1>
-			<p>
-				<span class="col-md-3"></span>
-				<i class="fa fa-heart"></i>
-				<span class="col-md-3 col-md-offset-8"></span>
-			</p>
-			<p>are getting married September 17th, 2016</p>
+	<div class="container">
+		<div id="about" class="row">
+
 		</div>
 	</div>
-	<div class="countdown">
-		<span id="days">0</span>
-		<span id="hours">0</span>
-		<span id="minutes">0</span>
-		<span id="seconds">0</span>
-		<div id="countdown-end">Wedding Day!!!</div>
-	</div>
 	<script src="dist/js/bundle.js"></script>
+	<script type="text/javascript">
+		$('scroll').on('click', function(e) {
+			$('html, body').animate({
+				scrollTop: $(window).height()
+			}, 1200);
+		})
+	</script>
 </body>
 </html>

@@ -3,6 +3,10 @@
 .countdown {
 	text-align: center;
 	margin-top: 30vh;
+	div {
+		font-size: 20px;
+		color: $black;
+	}
 	span {
 		background: rgba($eggshell, 0.8);
 		color: $purple;

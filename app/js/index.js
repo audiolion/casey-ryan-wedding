@@ -10,3 +10,9 @@ var timer = Countdown.timer(end, function(time) {
 }, function() {
   document.getElementById('countdown-end').setAttribute('display', 'block')
 })
+
+$(document).ready(function() {
+	$('.countdown-section').each(function () {
+		$(this).css('font-size', $(this).width() * 0.18)
+	})
+})

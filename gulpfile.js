@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var watch = require('gulp-watch');
-var browser_sync = require('browser-sync');
+var browserSync = require('browser-sync');
 var browserify = require('browserify');
 var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
@@ -10,7 +10,7 @@ var buffer = require('vinyl-buffer');
 var cssnano = require('gulp-cssnano');
 var sourcemaps = require('gulp-sourcemaps');
 var del = require('del');
-var reload = browser_sync.reload;
+var reload = browserSync.reload;
 
 gulp.task('images', function() {
 	return gulp.src('app/images/*')
@@ -49,17 +49,16 @@ gulp.task('sass', function() {
     .pipe(cssnano())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./app/dist/css'))
-    .pipe(reload({ stream:true }));
+    .pipe(reload({stream: true}));
 });
 
 gulp.task('serve', ['clean:dist', 'sass','browserify','images'], function() {
-  browser_sync({
-    server: {
-      baseDir: 'app'
-    }
+  browserSync.init({
+    server: './app'
   });
 
   gulp.watch('app/scss/*.scss', ['sass']);
   gulp.watch('app/js/index.js', ['browserify']);
   gulp.watch('app/images/*', ['images']);
+  gulp.watch('app/*.html').on('change', reload);
 });
