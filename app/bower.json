@@ -1,0 +1,21 @@
+{
+  "name": "casey-ryan-wedding",
+  "description": "Wedding website for my upcoming marriage to Casey",
+  "main": "index.js",
+  "authors": [
+    "Ryan Castner"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/audiolion/casey-ryan-wedding",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "^3.5.2"
+  }
+}

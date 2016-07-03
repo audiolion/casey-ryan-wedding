@@ -1,0 +1,35 @@
+@import 'variables';
+
+.countdown {
+	text-align: center;
+	margin-top: 30vh;
+	span {
+		background: rgba($eggshell, 0.8);
+		color: $purple;
+		margin-bottom: 4em;
+		font-size: 20px;
+	}
+	.fa-chevron-left {
+		color: $eton;
+	}
+}
+
+.countdown-section {
+	background: $eggshell;
+	display: inline-block;
+	height: 80px;
+	width: 80px;
+	text-align: center;
+	text-transform: uppercase;
+
+	p {
+		margin-top: 10px;
+	}
+}
+
+.countdown-amount {
+	font-family: 'Dancing Script', cursive;
+	font-size: 200%;
+	margin-top: 30px;
+	color: $purple;
+}
